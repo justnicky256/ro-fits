@@ -5,7 +5,6 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "primaryColor": "#ee2424",
-    "backgroundColor": "#ee2424",
     "icon": "./assets/images/icon.png",
     "scheme": "ro-fits",
     "userInterfaceStyle": "automatic",
@@ -14,7 +13,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ee2424"
-      }
+      },
+      "package": "com.justnicky256.rofits"
     },
     "plugins": [
       "expo-router",
@@ -22,14 +22,21 @@
         "expo-splash-screen",
         {
           "image": "./assets/images/splash-icon.png",
-          "imageWidth": 250,
-          "resizeMode": "contain",
-          "backgroundColor": "#ee2424"
+          "backgroundColor": "#ee2424",
+          "imageWidth": 250
         }
       ]
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "48fda15c-0acc-4974-8fae-5d2fbfb7fc60"
+      }
     }
   }
 }
